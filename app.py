@@ -20,7 +20,7 @@ def divide_by_100(X):
 models = {}
 # ชื่อ Key จะต้องตรงกับตอนเซฟใน MODELS_CONFIG ของ pyrolysis_backend.py
 model_names = ['Yields_Multi', 'Sulphur', 'Cetane', 'Chlorine']
-model_dir = 'backend_models' # โฟลเดอร์ที่คุณเซฟโมเดลไว้
+model_dir = '.' # โฟลเดอร์ที่คุณเซฟโมเดลไว้
 
 print("กำลังโหลดโมเดลเข้าสู่ระบบ...")
 for name in model_names:
