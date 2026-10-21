@@ -37,7 +37,11 @@ df_ref = pd.read_csv('Prepared_Data_Pyrolysis_9_Imputed.csv')
 search_features = ['LB', 'WT', 'TPO', 'PP', 'PS', 'PE', 'PVC', 'PET', 'Catalyst (%)', 'HHT (C)', 'Ti (min)']
 ref_matrix = df_ref[search_features].values
 
-EXPECTED_FEATURES = search_features + ['C', 'H', 'N', 'S', 'O', 'Ash', 'FC', 'VM', 'M']
+EXPECTED_FEATURES = [
+    'LB', 'WT', 'TPO', 'PP', 'PS', 'PE', 'PVC', 'PET', 
+    'C', 'H', 'N', 'S', 'O', 'Ash', 'FC', 'VM', 'M', 
+    'Catalyst (%)', 'HHT (C)', 'Ti (min)'
+]
 
 # ==========================================
 # 3. สร้าง API Endpoint สำหรับรับข้อมูลและทำนายผล
