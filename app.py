@@ -4,6 +4,7 @@ import pandas as pd
 import numpy as np
 import joblib
 import os
+import __main__
 
 app = Flask(__name__)
 CORS(app)
@@ -13,7 +14,7 @@ CORS(app)
 # ==========================================
 def divide_by_100(X):
     return X / 100.0
-
+__main__.divide_by_100 = divide_by_100
 # ==========================================
 # 2. โหลดโมเดล .pkl และ Database สำหรับทำ Auto-fill
 # ==========================================
